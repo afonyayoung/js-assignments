@@ -47,7 +47,11 @@ function* get99BottlesOfBeer() {
  *
  */
 function* getFibonacciSequence() {
-    throw new Error('Not implemented');
+    let prev = 0,
+    now = 1;
+    yield 0;
+    yield 1;
+    while (true) yield now += [prev, prev = now][0]
 }
 
 
