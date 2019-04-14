@@ -48,10 +48,10 @@ function* get99BottlesOfBeer() {
  */
 function* getFibonacciSequence() {
     let prev = 0,
-    now = 1;
+    current = 1;
     yield 0;
     yield 1;
-    while (true) yield now += [prev, prev = now][0]
+    while (true) yield current += [prev, prev = current][0]
 }
 
 
